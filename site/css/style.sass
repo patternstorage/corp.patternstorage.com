@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
 body
     font-family: 'Kumbh Sans', sans-serif
+    font-weight: bold
 body, main, article, section
     overflow-x: hidden
 *
@@ -14,7 +15,6 @@ h1
 img
     object-fit: cover
     width: 100%
-        
 //画像サイズ調整
 @media (min-width: 576px)
     .w-sm-25
@@ -92,6 +92,10 @@ img
     font-size: $h3-font-size
 .text-black
     color: $black
+.letter-spacer-sm
+    letter-spacing: 0.1rem
+.line-height-sm
+    line-height: 2.7rem 
 .container
     +media-breakpoint-down(sm)
         padding-left: 20px
@@ -101,7 +105,7 @@ img
 //ヘッダー
 .header
     padding-top: 13px
-    margin-bottom: 70px
+    margin-bottom: 120px
     position: fixed
     +media-breakpoint-down(sm)
         margin-bottom: 10px
@@ -127,12 +131,13 @@ img
     margin-top: 8px
 h1
     color: $white
-    margin: 0
     position: absolute
-    top: calc( 50% - 0.5em )
-    width: 100%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
     text-align: center
-    
+    width: 100%
+    font-weight: bold
 //画像フルスクリーン
 .full
     position: relative
