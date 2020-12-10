@@ -1,0 +1,45 @@
+/*
+Error: Invalid CSS after "32px  ": expected expression (e.g. 1px, bold), was "!default  // bl..."
+        on line 9 of /Users/yukiyokino/Documents/develop/html/tokkou-no-haha/site/vegas-master/src/sass/vegas.sass
+
+4: // Animation params
+5: $vegas-kenburns-scale:      1.5   !default
+6: $vegas-kenburns-translate:  10%   !default
+7: 
+8: // Transition params
+9: $vegas-blur-value:          32px  !default  // blur transition
+10: $vegas-swirl-degree:        35deg !default  // swirl transition
+11: $vegas-swirl-scale:         2     !default  // swirl transition
+12: $vegas-zoom-scale:          2     !default  // zoom transition
+13: 
+14: // Main
+
+Backtrace:
+/Users/yukiyokino/Documents/develop/html/tokkou-no-haha/site/vegas-master/src/sass/vegas.sass:9
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/lexer.rb:240:in `expected!'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/parser.rb:897:in `assert_done'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/parser.rb:69:in `parse'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script/parser.rb:228:in `parse'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/script.rb:27:in `parse'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:1169:in `parse_script'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:779:in `parse_variable'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:650:in `parse_line'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:539:in `build_tree'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:558:in `block in append_children'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:557:in `each'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:557:in `append_children'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:417:in `_to_tree'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/bin/sass:37:in `load'
+/Applications/Adobe Dreamweaver 2020/Adobe Dreamweaver 2020.app/Contents/Resources/gems/bin/sass:37:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"32px  \": expected expression (e.g. 1px, bold), was \"!default  // bl...\"\A         on line 9 of /Users/yukiyokino/Documents/develop/html/tokkou-no-haha/site/vegas-master/src/sass/vegas.sass\A \A 4: // Animation params\A 5: $vegas-kenburns-scale:      1.5   !default\A 6: $vegas-kenburns-translate:  10%   !default\A 7: \A 8: // Transition params\A 9: $vegas-blur-value:          32px  !default  // blur transition\A 10: $vegas-swirl-degree:        35deg !default  // swirl transition\A 11: $vegas-swirl-scale:         2     !default  // swirl transition\A 12: $vegas-zoom-scale:          2     !default  // zoom transition\A 13: \A 14: // Main"; }

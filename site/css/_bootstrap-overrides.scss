@@ -1,0 +1,57 @@
+$font-size-base:            1.063rem !default;
+$orange:  #FF8937 !default;
+$pink:    #E61673 !default;
+$green:   #40AEA8 !default;
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 2),
+  6: ($spacer * 2.5),
+  7: ($spacer * 3),
+  8: ($spacer * 3.5),
+  9: ($spacer * 4),
+  10: ($spacer * 4.5),
+  11: ($spacer * 5),
+  12: ($spacer * 5.5),
+  13: ($spacer * 6),
+  14:($spacer * 6.5),
+  15:($spacer * 7),
+  16:($spacer * 8),
+  17:($spacer * 9),
+  18:($spacer * 10),
+  19:($spacer * 11),
+  20:($spacer * 12),
+), $spacers);
+
+$gray-100: #F4F4F4 !default;
+$gray-200: darken($gray-100 ,3%) !default;
+$gray-300: darken($gray-100 ,10%) !default;
+$gray-400: darken($gray-100 ,14%) !default;
+$gray-500: darken($gray-100 ,18%) !default;
+$gray-600: darken($gray-100 ,34%) !default;
+$gray-700: darken($gray-100 ,50%) !default;
+$gray-800: darken($gray-100 ,60%) !default;
+$gray-900: darken($gray-100 ,80%) !default;
+$black: #000 !default;
+
+$light: $gray-200 !default;
+
+$text-muted: $gray-500 !default;
+
+$line-height-base: 1.8 !default;
+
+$font-size-sm: ($font-size-base * .8) !default;
+
+$h1-font-size: $font-size-base * 3.0 !default;
+$h2-font-size: $font-size-base * 2.5 !default;
+$h3-font-size: $font-size-base * 2.0 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.3 !default;
+$h6-font-size: $font-size-base * 1.0 !default;
+
+$headings-line-height: 1.6 !default;
