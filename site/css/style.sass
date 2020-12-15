@@ -18,7 +18,7 @@ h3
     span
         letter-spacing: 0.1rem
         display: block
-        @extend .text-sm
+        @extend .title-sm
 img
     object-fit: cover
     width: 100%
@@ -80,7 +80,7 @@ img
 .m-auto-0
     margin: 0 auto
 .bg-gray
-    background-color: $gray-100
+    background-color: #f6f6f6
 .row--wide
     margin-left: -40px
     margin-right: -40px
@@ -89,20 +89,26 @@ img
     padding-left: 40px
 .text-base
     font-size: $font-size-base
-.text-sm
+.title-sm
     font-size: $font-size-sm
-.text-md
+.title-md
     font-size: $h5-font-size
-.text-lg
-    font-size: $h4-font-size
-.text-xl
+.title-lg
     font-size: $h3-font-size
+.title-xl
+    font-size: $h2-font-size
 .text-black
     color: $black
+.text-pink
+    color: $pink
 .letter-spacer-sm
     letter-spacing: 0.1rem
 .line-height-sm
     line-height: 2.7rem 
+.stick-img
+    margin-bottom: 0
+    img
+        width: 45px
 .container
     +media-breakpoint-down(sm)
         padding-left: 20px
@@ -112,10 +118,7 @@ img
 //ヘッダー
 .header
     padding-top: 13px
-    margin-bottom: 120px
     position: fixed
-    +media-breakpoint-down(sm)
-        margin-bottom: 10px
 .navbar
     padding: 0
 .navbar-brand
@@ -145,6 +148,12 @@ h1
     text-align: center
     width: 100%
     font-weight: bold
+.description-wrapper
+    &__img
+        margin-bottom: 10px
+    &__title
+        @extend .title-md
+        font-weight: bold
 //画像フルスクリーン
 .full
     position: relative
