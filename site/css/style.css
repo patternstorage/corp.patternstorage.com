@@ -14921,6 +14921,16 @@ img {
   width: 100%;
 }
 
+dd {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1199.98px) {
+  br {
+    display: none;
+  }
+}
+
 @media (min-width: 576px) {
   .w-sm-25 {
     width: 25% !important;
@@ -15012,6 +15022,22 @@ img {
   margin: 0 auto;
 }
 
+.gray-line {
+  border-top: solid 1px #d0d0d0;
+}
+
+@media (min-width: 992px) {
+  .gray-line {
+    width: 80%;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../img/toggler_icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .bg-gray {
   background-color: #f6f6f6;
 }
@@ -15030,20 +15056,56 @@ img {
   font-size: 0.937rem;
 }
 
-.title-sm, h3 span {
-  font-size: 0.8433rem;
-}
-
-.title-md, .description-wrapper__title {
+.title-sm, h3 span, .description-wrapper__title {
   font-size: 1.35865rem;
 }
 
-.title-lg {
+.title-md {
   font-size: 2.1551rem;
 }
 
-.title-xl {
+.title-lg {
   font-size: 3.2795rem;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .title-lg {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .title-lg {
+    font-size: 2.1rem;
+  }
+}
+
+.title-xl {
+  font-size: 4.685rem;
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .title-xl {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .title-xl {
+    font-size: 2.3rem;
+  }
+}
+
+.text-md {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 767.98px) {
+  .text-md {
+    font-size: 1.1rem;
+  }
 }
 
 .text-black {
@@ -15054,7 +15116,7 @@ img {
   color: #E61673;
 }
 
-.letter-spacer-sm {
+.letter-spacer-sm, .title-lg, .title-xl {
   letter-spacing: 0.1rem;
 }
 
@@ -15167,6 +15229,46 @@ h1 {
 .wrapper-circle__img {
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.media-content img {
+  width: 300px;
+}
+
+.bg-img {
+  background-image: url("../img/bg_gray.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  background-color: #000;
+  font-weight: normal;
+}
+
+.footer img {
+  width: 250px;
+  margin-bottom: 50px;
+}
+
+.footer ul {
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.footer ul li {
+  color: #9d9d9d;
+  margin-bottom: 30px;
+}
+
+.footer ul li span {
+  display: block;
+  color: #F4F4F4;
+  margin-top: 5px;
+}
+
+.footer .copyright {
+  color: #757575;
 }
 
 .full {

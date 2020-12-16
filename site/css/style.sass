@@ -22,6 +22,11 @@ h3
 img
     object-fit: cover
     width: 100%
+dd
+    margin-bottom: 15px
+br
+    +media-breakpoint-down(lg)
+        display: none
 //画像サイズ調整
 @media (min-width: 576px)
     .w-sm-25
@@ -79,6 +84,14 @@ img
         width: auto !important
 .m-auto-0
     margin: 0 auto
+.gray-line
+    border-top: solid 1px $gray-400
+    +media-breakpoint-up(lg)
+        width: 80%
+.navbar-light .navbar-toggler-icon
+    background-image: url("../img/toggler_icon.png")
+    background-size: cover
+    background-repeat: no-repeat
 .bg-gray
     background-color: #f6f6f6
 .row--wide
@@ -90,13 +103,29 @@ img
 .text-base
     font-size: $font-size-base
 .title-sm
-    font-size: $font-size-sm
-.title-md
     font-size: $h5-font-size
-.title-lg
+.title-md
     font-size: $h3-font-size
-.title-xl
+.title-lg
     font-size: $h2-font-size
+    font-weight: bold
+    @extend .letter-spacer-sm
+    +media-breakpoint-down(md)
+        font-size: 3rem
+    +media-breakpoint-down(sm)
+        font-size: 2.1rem
+.title-xl
+    font-size: $h1-font-size
+    font-weight: bold
+    @extend .letter-spacer-sm
+    +media-breakpoint-down(md)
+        font-size: 3.5rem
+    +media-breakpoint-down(sm)
+        font-size: 2.3rem
+.text-md
+    font-size: 1.3rem
+    +media-breakpoint-down(sm)
+        font-size: 1.1rem
 .text-black
     color: $black
 .text-pink
@@ -161,7 +190,7 @@ h1
     &__img
         margin-bottom: 10px
     &__title
-        @extend .title-md
+        @extend .title-sm
         font-weight: bold
     &__text
         margin-bottom: 30px
@@ -170,6 +199,31 @@ h1
     &__img
         margin:  0 auto
         margin-bottom: 20px
+.media-content
+    img
+        width: 300px
+.bg-img
+    background-image: url("../img/bg_gray.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+.footer
+    background-color: $black
+    font-weight: normal
+    img
+        width: 250px
+        margin-bottom: 50px
+    ul
+        margin-bottom: 50px
+        list-style: none
+        li
+            color: $gray-600
+            margin-bottom: 30px
+            span
+                display: block
+                color: $gray-100
+                margin-top: 5px
+    .copyright
+        color: $gray-700
 //画像フルスクリーン
 .full
     position: relative
