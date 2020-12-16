@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 4.2165rem;
+  font-size: 4.685rem;
 }
 
 h2, .h2 {
@@ -369,7 +369,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.874rem;
+  font-size: 2.1551rem;
 }
 
 h4, .h4 {
@@ -15039,7 +15039,7 @@ img {
 }
 
 .title-lg {
-  font-size: 1.874rem;
+  font-size: 2.1551rem;
 }
 
 .title-xl {
@@ -15068,6 +15068,15 @@ img {
 
 .stick-img img {
   width: 45px;
+}
+
+.btn-pink {
+  background-color: #E61673;
+  border-color: #E61673;
+  color: #fff;
+  padding: 15px 45px;
+  border-radius: 100px;
+  font-weight: normal;
 }
 
 @media (max-width: 767.98px) {
@@ -15141,6 +15150,10 @@ h1 {
 
 .description-wrapper__title {
   font-weight: bold;
+}
+
+.description-wrapper__text {
+  margin-bottom: 30px;
 }
 
 .full {
