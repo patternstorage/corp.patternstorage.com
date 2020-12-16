@@ -15086,6 +15086,10 @@ img {
   }
 }
 
+.container--narrow {
+  max-width: 900px;
+}
+
 .logo-img {
   width: 250px;
 }
@@ -15154,6 +15158,15 @@ h1 {
 
 .description-wrapper__text {
   margin-bottom: 30px;
+}
+
+.wrapper-circle {
+  text-align: center;
+}
+
+.wrapper-circle__img {
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .full {
