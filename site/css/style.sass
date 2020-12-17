@@ -22,11 +22,13 @@ h3
 img
     object-fit: cover
     width: 100%
-dd
-    margin-bottom: 15px
 br
     +media-breakpoint-down(lg)
         display: none
+dd
+    margin-bottom: 20px
+ul
+    list-style: none
 //画像サイズ調整
 @media (min-width: 576px)
     .w-sm-25
@@ -138,21 +140,31 @@ br
     margin-bottom: 0
     img
         width: 45px
-.btn-pink
-    background-color: $pink
-    border-color: $pink
+.btn
     color: $white
-    padding: 15px 45px
+    padding: 9px 45px
     border-radius: 100px
     font-weight: normal
+.btn-pink
+    background-color: $pink
+.btn-gray
+    background-color: $yellow
 .container
     +media-breakpoint-down(sm)
         padding-left: 20px
         padding-right: 20px
 .container--narrow
     max-width: 900px
+.container--narrow--sm
+    max-width: 700px
 .logo-img
     width: 250px
+.list-content
+    .row
+        padding: 15px 0
+        border-bottom: 1px solid $gray-300
+        &:first-child
+            padding-top: 0
 //ヘッダー
 .header
     padding-top: 13px
@@ -214,7 +226,6 @@ h1
         margin-bottom: 50px
     ul
         margin-bottom: 50px
-        list-style: none
         li
             color: $gray-600
             margin-bottom: 30px
