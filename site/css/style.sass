@@ -45,6 +45,8 @@ ul
         display: none
         z-index: 9999
         width: 280px
+        +media-breakpoint-down(sm)
+            width: 170px
 //画像サイズ調整
 @media (min-width: 576px)
     .w-sm-25
@@ -183,18 +185,17 @@ ul
     max-width: 700px
 .logo-img
     width: 250px
-.list-content
-    .row
-        padding: 15px 0
-        border-bottom: 1px solid $gray-300
-        &:first-child
-            padding-top: 0
 //ヘッダー
 .header
     padding-top: 13px
     position: fixed
+.navbar-collapse
+    z-index: 1000
 .navbar
     padding: 0
+.navbar-nav
+    +media-breakpoint-down(md)
+        background-color: $gray-700
 .navbar-brand
     font-family: 'Poiret One', cursive
     font-size: 2rem
@@ -213,6 +214,7 @@ ul
     border: none
 .nav-item
     margin-top: 8px
+    z-index: 999
 h1
     color: $white
     position: absolute
@@ -222,6 +224,7 @@ h1
     text-align: center
     width: 100%
     font-weight: bold
+    z-index: 100
 .description-wrapper
     &__img
         margin-bottom: 10px
@@ -235,6 +238,12 @@ h1
     &__img
         margin:  0 auto
         margin-bottom: 20px
+.list-content
+    .row
+        padding: 15px 0 13px 0
+        border-bottom: 1px solid $gray-300
+        &:first-child
+            padding-top: 0
 .media-content
     img
         width: 300px
