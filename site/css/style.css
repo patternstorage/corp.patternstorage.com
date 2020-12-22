@@ -15147,8 +15147,16 @@ ul {
   background-color: #E61673;
 }
 
-.btn-gray {
-  background-color: #ffc107;
+.btn-navy {
+  background-color: #2e2f3c;
+}
+
+.fadein {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 @media (max-width: 767.98px) {
