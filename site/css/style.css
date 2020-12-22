@@ -15301,4 +15301,10 @@ h1 {
   background-size: cover;
   background-position: center;
 }
+
+.bg-aaa {
+  background-image: url("../img/Group.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*# sourceMappingURL=style.css.map */
