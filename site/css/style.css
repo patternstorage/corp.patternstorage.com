@@ -14935,6 +14935,27 @@ ul {
   list-style: none;
 }
 
+.start {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+}
+
+.start p {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  width: 280px;
+}
+
 @media (min-width: 576px) {
   .w-sm-25 {
     width: 25% !important;
@@ -15044,6 +15065,12 @@ ul {
 
 .bg-gray {
   background-color: #f6f6f6;
+}
+
+.bg-icon {
+  background-image: url("../img/Group.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .row--wide {
@@ -15308,11 +15335,5 @@ h1 {
   background-image: url("../img/eye-catch.jpg");
   background-size: cover;
   background-position: center;
-}
-
-.bg-aaa {
-  background-image: url("../img/Group.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

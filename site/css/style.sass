@@ -29,6 +29,22 @@ dd
     margin-bottom: 20px
 ul
     list-style: none
+.start
+    background-color: $white
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: 9000
+    p
+        position: fixed
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        display: none
+        z-index: 9999
+        width: 280px
 //画像サイズ調整
 @media (min-width: 576px)
     .w-sm-25
@@ -96,6 +112,10 @@ ul
     background-repeat: no-repeat
 .bg-gray
     background-color: #f6f6f6
+.bg-icon
+    background-image: url("../img/Group.jpg")
+    background-repeat: no-repeat
+    background-size: cover
 .row--wide
     margin-left: -40px
     margin-right: -40px
@@ -247,7 +267,3 @@ h1
     background-image: url("../img/eye-catch.jpg")
     background-size: cover
     background-position: center
-.bg-aaa
-    background-image: url("../img/Group.jpg")
-    background-repeat: no-repeat
-    background-size: cover
