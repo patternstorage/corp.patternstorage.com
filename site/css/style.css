@@ -14935,33 +14935,6 @@ ul {
   list-style: none;
 }
 
-.start {
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 9000;
-}
-
-.start p {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: none;
-  z-index: 9999;
-  width: 280px;
-}
-
-@media (max-width: 767.98px) {
-  .start p {
-    width: 170px;
-  }
-}
-
 @media (min-width: 576px) {
   .w-sm-25 {
     width: 25% !important;
