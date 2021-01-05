@@ -171,6 +171,8 @@ ul
 .header
     padding-top: 13px
     position: fixed
+    z-index: 9999
+    width: 100%
 .navbar-collapse
     z-index: 1000
 .navbar
@@ -197,16 +199,6 @@ ul
 .nav-item
     margin-top: 8px
     z-index: 999
-h1
-    color: $white
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    text-align: center
-    width: 100%
-    font-weight: bold
-    z-index: 100
 .description-wrapper
     &__img
         margin-bottom: 10px
@@ -250,11 +242,30 @@ h1
                 margin-top: 5px
     .copyright
         color: $gray-700
-//画像フルスクリーン
-.full
+.movie
     position: relative
+    display: inline-block
+    h1
+        color: $white
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+        width: 100%
+        font-weight: bold
+        z-index: 100
+.movie:before
+    content: " "
+    background-image: linear-gradient(-45deg, transparent 25%,rgba(0,0,0,0.2)25%,rgba(0,0,0,0.2)50%,transparent 50%,transparent 75%,rgba(0,0,0,0.2)75%,rgba(0,0,0,0.2))
+    position: absolute
+    display: block
+    background-repeat: repeat
     width: 100%
-    min-height: 100vh
-    background-image: url("../img/eye-catch.jpg")
-    background-size: cover
-    background-position: center
+    height: 100%
+    background-size: 4px 4px
+    z-index: 50
+    top: 0
+    left: 0
+.video
+    width: 100%
