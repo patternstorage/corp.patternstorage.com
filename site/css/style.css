@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -15185,10 +15186,16 @@ ul {
 }
 
 .header {
-  padding-top: 13px;
   position: fixed;
   z-index: 9999;
   width: 100%;
+  padding: 20px 70px 0 70px;
+}
+
+@media (max-width: 991.98px) {
+  .header {
+    padding: 15px 20px 0 20px;
+  }
 }
 
 .navbar-collapse {
@@ -15201,7 +15208,7 @@ ul {
 
 @media (max-width: 991.98px) {
   .navbar-nav {
-    background-color: #757575;
+    background-color: #fff;
   }
 }
 
@@ -15220,6 +15227,12 @@ ul {
   color: #fff;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: #000;
+  }
 }
 
 .navbar-expand-lg .navbar-nav .nav-link:hover {
@@ -15308,25 +15321,7 @@ ul {
   color: #757575;
 }
 
-.movie {
-  position: relative;
-  display: inline-block;
-}
-
-.movie h1 {
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100%;
-  font-weight: bold;
-  z-index: 100;
-}
-
-.movie:before {
+.video-container:before {
   content: " ";
   background-image: linear-gradient(-45deg, transparent 25%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.2) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.2));
   position: absolute;
@@ -15340,7 +15335,61 @@ ul {
   left: 0;
 }
 
-.video {
+.video-container {
+  margin: 0 auto;
   width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: relative;
+}
+
+.video-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background: url(img/video.jpg) no-repeat center center/cover;
+}
+
+.video-wrap h1 {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  z-index: 100;
+}
+
+video {
+  min-width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+
+/*画面サイズが変わっても常に動画の中央が表示されるようにする */
+/*動画よりも画面が横に長くなるとき用 */
+@media (aspect-ratio: 16 / 9), (min-aspect-ratio: 16 / 9) {
+  video {
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+/*動画よりも画面が縦に長くなるとき用 */
+@media (max-aspect-ratio: 16 / 9) {
+  video {
+    height: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 /*# sourceMappingURL=style.css.map */

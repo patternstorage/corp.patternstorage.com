@@ -50,7 +50,6 @@
 
 <body>
   <header class="header">
-    <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand logo-img" href="https://patternstorage.com/"><img src="site/img/logo_white.png"
             alt="patternstorage"></a>
@@ -78,15 +77,16 @@
           </ul>
         </div>
       </nav>
-    </div>
   </header>
-  <div class="movie">
-      <video class="video d-none d-md-block" src="site/movie/patternstorage_x.mp4" poster="site/img/movie.jpg" autoplay loop muted>
+  <div class="video-container">
+    <div class="video-wrap">
+      <video autoplay muted playsinline loop>
+        <source src="site/movie/patternstorage_x.mp4" type="video/mp4">
+        <img src="img/video.jpg">
       </video>
-      <video class="video d-md-none" src="site/movie/patternstorage_y.mp4" poster="site/img/movie.jpg" autoplay loop muted>
-      </video>
-    <h1 class="title-xl">ファッションが、<br class="d-block">正しく多様化する世界へ。</h1>
-</div>
+      <h1 class="title-xl">ファッションが、<br class="d-block">正しく多様化する世界へ。</h1>
+    </div>
+  </div>
   <main>
     <article>
       <div class="bg-icon">
@@ -113,8 +113,7 @@
                 <p class="mb-5">
                   生産管理は沢山のエクセルファイルを併用している...<br>仕様書・資材の確認に手間取っている...<br>システム内で縫製仕様書の読み取りをして発注までがワンストップ。サブスクリプション型アパレル製造業のクラウドサービス。<br>今なら３ヶ月無料、POC（効果測定）からはじめて効率化を数値で実感頂いた上でご利用いただけます。
                 </p>
-                <a class="btn btn-pink" href="https://service.patternstorage.com/"
-                  target="_blank">詳しく見る</a>
+                <a class="btn btn-pink" href="https://service.patternstorage.com/" target="_blank">詳しく見る</a>
               </div>
             </div>
           </div>

@@ -169,17 +169,19 @@ ul
     width: 250px
 //ヘッダー
 .header
-    padding-top: 13px
     position: fixed
     z-index: 9999
     width: 100%
+    padding: 20px 70px 0 70px
+    +media-breakpoint-down(md)
+        padding: 15px 20px 0 20px
 .navbar-collapse
     z-index: 1000
 .navbar
     padding: 0
 .navbar-nav
     +media-breakpoint-down(md)
-        background-color: $gray-700
+        background-color: $white
 .navbar-brand
     font-family: 'Poiret One', cursive
     font-size: 2rem
@@ -190,6 +192,8 @@ ul
     padding-right: 30px
     color: $white
     transition: 0.7s
+    +media-breakpoint-down(md)
+        color: $black
     &:hover
         color: $pink
     &:last-child
@@ -242,20 +246,7 @@ ul
                 margin-top: 5px
     .copyright
         color: $gray-700
-.movie
-    position: relative
-    display: inline-block
-    h1
-        color: $white
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        text-align: center
-        width: 100%
-        font-weight: bold
-        z-index: 100
-.movie:before
+.video-container:before
     content: " "
     background-image: linear-gradient(-45deg, transparent 25%,rgba(0,0,0,0.2)25%,rgba(0,0,0,0.2)50%,transparent 50%,transparent 75%,rgba(0,0,0,0.2)75%,rgba(0,0,0,0.2))
     position: absolute
@@ -267,5 +258,46 @@ ul
     z-index: 50
     top: 0
     left: 0
-.video
+.video-container
+    margin: 0 auto
     width: 100%
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    position: relative
+.video-wrap
+    position: relative
+    overflow: hidden
+    width: 100%
+    height: 100vh
+    background: url(img/video.jpg) no-repeat center (center / cover)
+    h1
+        color: $white
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-align: center
+        width: 100%
+        font-weight: bold
+        z-index: 100
+video
+    min-width: 100%
+    min-height: 100vh
+    position: absolute
+
+/*画面サイズが変わっても常に動画の中央が表示されるようにする
+/*動画よりも画面が横に長くなるとき用
+@media (aspect-ratio: 16 / 9), (min-aspect-ratio: 16 / 9)
+    video
+        width: 100%
+        top: 50%
+        transform: translateY(-50%)
+
+/*動画よりも画面が縦に長くなるとき用
+@media (max-aspect-ratio: 16 / 9)
+    video
+        height: 100%
+        left: 50%
+        transform: translateX(-50%)
