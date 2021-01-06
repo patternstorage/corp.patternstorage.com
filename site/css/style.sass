@@ -167,6 +167,48 @@ ul
     max-width: 700px
 .logo-img
     width: 250px
+.scroll-line
+    display: inline-block
+    position: absolute
+    left: 50%
+    bottom: 0
+    transform: translateY(0) translateX(-50%)
+    -webkit-transform: translateY(0) translateX(-50%)
+    margin: auto
+    z-index: 2
+    padding: 10px 10px 70px
+    overflow: hidden
+    color: $white
+    font-size: 14px
+    line-height: 1
+    letter-spacing: .2em
+    text-transform: uppercase
+    text-decoration: none
+    z-index: 100
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 50%
+        width: 1px
+        height: 60px
+        background: #fff
+    &::after
+        animation: sdl 2s cubic-bezier(1, 0, 0, 1) infinite
+
+@keyframes sdl
+    0%
+        transform: scale(1, 0)
+        transform-origin: 0 0
+    35%
+        transform: scale(1, 1)
+        transform-origin: 0 0
+    35.1%
+        transform: scale(1, 1)
+        transform-origin: 0 100%
+    70%, 100%
+        transform: scale(1, 0)
+        transform-origin: 0 100%
 //ヘッダー
 .header
     position: absolute
@@ -203,49 +245,6 @@ ul
 .nav-item
     margin-top: 8px
     z-index: 999
-.description-wrapper
-    &__img
-        margin-bottom: 10px
-    &__title
-        @extend .title-sm
-        font-weight: bold
-    &__text
-        margin-bottom: 30px
-.wrapper-circle
-    text-align: center
-    &__img
-        margin:  0 auto
-        margin-bottom: 20px
-.list-content
-    .row
-        padding: 15px 0 13px 0
-        border-bottom: 1px solid $gray-300
-        &:first-child
-            padding-top: 0
-.media-content
-    img
-        width: 300px
-.bg-img
-    background-image: url("../img/bg_gray.jpg")
-    background-repeat: no-repeat
-    background-size: cover
-.footer
-    background-color: $black
-    font-weight: normal
-    img
-        width: 250px
-        margin-bottom: 50px
-    ul
-        margin-bottom: 50px
-        li
-            color: $gray-600
-            margin-bottom: 30px
-            span
-                display: block
-                color: $gray-100
-                margin-top: 5px
-    .copyright
-        color: $gray-700
 .video-container:before
     content: " "
     background-image: linear-gradient(-45deg, transparent 25%,rgba(0,0,0,0.2)25%,rgba(0,0,0,0.2)50%,transparent 50%,transparent 75%,rgba(0,0,0,0.2)75%,rgba(0,0,0,0.2))
@@ -301,47 +300,49 @@ video
         height: 100%
         left: 50%
         transform: translateX(-50%)
+.description-wrapper
+    &__img
+        margin-bottom: 10px
+    &__title
+        @extend .title-sm
+        font-weight: bold
+    &__text
+        margin-bottom: 30px
+.wrapper-circle
+    text-align: center
+    &__img
+        margin:  0 auto
+        margin-bottom: 20px
+.list-content
+    .row
+        padding: 15px 0 13px 0
+        border-bottom: 1px solid $gray-300
+        &:first-child
+            padding-top: 0
+.media-content
+    img
+        width: 300px
+.bg-img
+    background-image: url("../img/bg_gray.jpg")
+    background-repeat: no-repeat
+    background-size: cover
+.footer
+    background-color: $black
+    font-weight: normal
+    img
+        width: 250px
+        margin-bottom: 50px
+    ul
+        margin-bottom: 50px
+        li
+            color: $gray-600
+            margin-bottom: 30px
+            span
+                display: block
+                color: $gray-100
+                margin-top: 5px
+    .copyright
+        color: $gray-700
 
 
-.aaa
-    display: inline-block
-    position: absolute
-    left: 50%
-    bottom: 0
-    transform: translateY(0) translateX(-50%)
-    -webkit-transform: translateY(0) translateX(-50%)
-    margin: auto
-    z-index: 2
-    padding: 10px 10px 70px
-    overflow: hidden
-    color: $white
-    font-size: 14px
-    line-height: 1
-    letter-spacing: .2em
-    text-transform: uppercase
-    text-decoration: none
-    z-index: 100
-    &::after
-        content: ''
-        position: absolute
-        bottom: 0
-        left: 50%
-        width: 1px
-        height: 60px
-        background: #fff
-    &::after
-        animation: sdl 2s cubic-bezier(1, 0, 0, 1) infinite
 
-@keyframes sdl
-    0%
-        transform: scale(1, 0)
-        transform-origin: 0 0
-    35%
-        transform: scale(1, 1)
-        transform-origin: 0 0
-    35.1%
-        transform: scale(1, 1)
-        transform-origin: 0 100%
-    70%, 100%
-        transform: scale(1, 0)
-        transform-origin: 0 100%
